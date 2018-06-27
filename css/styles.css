@@ -22,7 +22,9 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
+  overflow-x: hidden;
   z-index: -2;
+  background-color: black;
 }
 
 
@@ -31,7 +33,7 @@ body {
 
 /*Navigation*/
 .nav {
-  position: fixed;
+  position: absolute;
   width: 100%;
   height: auto;
   animation-name: nav;
@@ -57,8 +59,9 @@ body {
   text-align: left;
   color: white;
   font-size: 1vw;
-  font-family: 'Quicksand', bgBold, Helvetica;
+  font-family: 'Indie Flower', bgBold, Helvetica;
   text-decoration: none;
+  font-weight: 500;
 }
 
 .nav a:hover {
@@ -79,7 +82,7 @@ body {
   background-image: url(../images/landscape_background.jpg);
   background-size: cover;
   background-attachment: fixed;
-  border-bottom: 1vw solid black;
+  border-bottom: 0.7vw solid #e6e6e6;
   z-index: -1;
 }
 
@@ -96,7 +99,16 @@ body {
 .home_title h1 {
   font-size: 5vw;
   text-align: center;
-  font-family: 'Quicksand', bgBold, Helvetica;
+  font-family: 'Indie Flower', bgBold, Helvetica;
+  font-weight: 100;
+}
+
+.home_title h2 {
+  margin-top: -4%;
+  font-size: 3vw;
+  text-align: center;
+  font-family: 'Indie Flower', bgBold, Helvetica;
+  font-weight: 100;
 }
 
 .home_title a {
@@ -111,7 +123,7 @@ body {
   color: black;
   font-size: 1.5vw;
   text-align: center;
-  font-family: 'Quicksand', bgBold, Helvetica;
+  font-family: 'Indie Flower', bgBold, Helvetica;
   border: 0.2vw solid black;
   border-radius: 3vw;
   padding: 0.3vw;
@@ -119,20 +131,98 @@ body {
 }
 
 .home_title a h1:hover {
+  color: black;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.home_title a h1:active {
   color: white;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.5)
 }
 
 
 
 
 
-/*About*/
-.about_page {
+/*Services*/
+.services_page {
   position: relative;
-  height: 100%;
+  height: 90%;
   width: 100%;
   margin: 0;
   padding: 0;
+  background-color: #438496;
   z-index: -1;
+}
+
+
+
+/*Slanted Border*/
+.services_page .border {
+  width: 100%;
+  position: absolute;
+  top: -5%;
+  left: -1%;
+  transform: rotate(2deg);
+  border: 5vw solid #438496;
+}
+
+
+
+
+
+/*Title*/
+.services_page .about_title {
+  width: 100%;
+  position: absolute;
+}
+
+.services_page .about_title h1 {
+  font-size: 3vw;
+  font-family: 'Indie Flower', bgBold, Helvetica;
+  font-weight: 500;
+}
+
+
+
+/*Cartoon*/
+.services_page .cartoon {
+  width: auto;
+  height: auto;
+}
+
+.services_page .cartoon .lawn-mower {
+  top: 96%;
+  left: 70%;
+  position: absolute;
+  width: 4vw;
+  height: auto;
+  transform: rotate(-2deg);
+}
+
+
+
+
+
+/*Contact*/
+.contact_page {
+  position: relative;
+  width: 100%;
+  height: 110%;
+  margin: 0;
+  padding: 0;
+  z-index: -2;
+  background-color: #3CC47C;
+}
+
+
+
+/*Slanted Border*/
+.contact_page .border {
+  width: 100%;
+  position: absolute;
+  top: -5%;
+  left: -1%;
+  transform: rotate(-2deg);
+  border: 2.5vw solid #438496;
 }
