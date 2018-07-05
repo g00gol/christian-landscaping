@@ -33,52 +33,53 @@ body {
 
 /*Navigation*/
 .nav {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  animation-name: nav;
-  animation-duration: 0.7s;
-}
-
-/*Animation*/
-@keyframes nav {
-  0% {
-    position: relative;
-    top: -100px;
-  }
-  100% {
-    position: relative;
-    top: 0px;
-  }
-}
-
-.nav a {
-  position: relative;
-  padding: 0.8vw 1.5vw;
-  float: right;
-  text-align: left;
-  color: white;
-  font-size: 1vw;
-  font-family: 'Indie Flower', bgBold, Helvetica;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.nav .closebtn {
+  position: fixed;
   visibility: hidden;
 }
 
-.nav a:hover {
-  color: gray;
-}
 
 
 
 
 /*Side Navigation*/
 .sideNav {
+  height: 100%;
+  width: 0;
   position: fixed;
-  visibility: hidden;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.sideNav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: 'Indie Flower', bgBold, Helvetica;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sideNav a:hover{
+  color: #f1f1f1;
+}
+
+.sideNav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .nav {padding-top: 15px;}
+  .nav a {font-size: 18px;}
 }
 
 
@@ -88,11 +89,12 @@ body {
 /*Side Button*/
 .side-button {
   position: fixed;
-  visibility: hidden;
 }
 
-.side-button {
+.side-button a {
   position: absolute;
+  padding: 3vw;
+  cursor: pointer;
 }
 
 
@@ -109,7 +111,6 @@ body {
   background-image: url(../images/landscape_background.jpg);
   background-size: cover;
   background-attachment: fixed;
-  border-bottom: 0.7vw solid #e6e6e6;
   z-index: -1;
 }
 
@@ -124,7 +125,8 @@ body {
 }
 
 .home_title h1 {
-  font-size: 5vw;
+  font-size: 10vw;
+  color: white;
   text-align: center;
   font-family: 'Indie Flower', bgBold, Helvetica;
   font-weight: 100;
@@ -132,7 +134,8 @@ body {
 
 .home_title h2 {
   margin-top: -4%;
-  font-size: 3vw;
+  font-size: 5vw;
+  color: white;
   text-align: center;
   font-family: 'Indie Flower', bgBold, Helvetica;
   font-weight: 100;
@@ -147,23 +150,23 @@ body {
   width: 20%;
   left: 40%;
   cursor: pointer;
-  color: black;
-  font-size: 1.5vw;
+  color: white;
+  font-size: 4vw;
   text-align: center;
   font-family: 'Indie Flower', bgBold, Helvetica;
   border: 0.2vw solid black;
-  border-radius: 3vw;
-  padding: 0.3vw;
+  border-radius: 5vw;
+  padding: 1vw;
   background-color: rgba(0,0,0,0.1);
 }
 
 .home_title a h1:hover {
-  color: black;
+  color: white;
   background-color: rgba(0,0,0,0.3);
 }
 
 .home_title a h1:active {
-  color: white;
+  color: gray;
   background-color: rgba(0,0,0,0.5)
 }
 
@@ -174,7 +177,7 @@ body {
 /*Services*/
 .services_page {
   position: relative;
-  height: 90%;
+  height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -188,10 +191,7 @@ body {
 .services_page .border {
   width: 100%;
   position: absolute;
-  top: -5%;
-  left: -1%;
-  transform: rotate(2deg);
-  border: 5vw solid #438496;
+  visbility: hidden;
 }
 
 
@@ -204,7 +204,7 @@ body {
 }
 
 .services_page .about_title h1 {
-  font-size: 3vw;
+  font-size: 8vw;
   font-family: 'Indie Flower', bgBold, Helvetica;
   font-weight: 500;
 }
@@ -218,12 +218,7 @@ body {
 }
 
 .services_page .cartoon .lawn-mower {
-  top: 96%;
-  left: 70%;
-  position: absolute;
-  width: 4vw;
-  height: auto;
-  transform: rotate(-2deg);
+  visibility: hidden;
 }
 
 
