@@ -31,6 +31,7 @@ window.onscroll = function() {
 
 
 //Smooth Scroll
+//Nav
 $(document).ready(function(){
   $(".nav > a").on('click', function(event) {
     if (this.hash !== "") {
@@ -45,8 +46,28 @@ $(document).ready(function(){
   });
 });
 
+
+
+//Title
 $(document).ready(function(){
   $(".home_page > .home_title > a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+
+
+
+//Side Nav
+$(document).ready(function(){
+  $(".sideNav > a").on('click', function(event) {
     if (this.hash !== "") {
       event.preventDefault();
       var hash = this.hash;
