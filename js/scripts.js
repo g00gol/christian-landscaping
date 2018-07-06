@@ -86,7 +86,7 @@ $(document).ready(function(){
 
 //Side Navigation
 function openNav() {
-    document.getElementById("sideNav").style.width = "250px";
+    document.getElementById("sideNav").style.width = "40vw";
 }
 
 function closeNav() {

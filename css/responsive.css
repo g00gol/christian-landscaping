@@ -191,7 +191,7 @@ body {
 .services_page .border {
   width: 100%;
   position: absolute;
-  visbility: hidden;
+  visibility: hidden;
 }
 
 
@@ -242,8 +242,5 @@ body {
 .contact_page .border {
   width: 100%;
   position: absolute;
-  top: -5%;
-  left: -1%;
-  transform: rotate(-2deg);
-  border: 2.5vw solid #438496;
+  visibility: hidden;
 }

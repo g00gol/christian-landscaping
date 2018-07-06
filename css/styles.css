@@ -196,6 +196,20 @@ body {
 
 
 
+/*Images*/
+.services_page .images {
+  position: absolute;
+  left: 50%;
+}
+
+.services_page .images .image1 {
+  width: 2vw;
+  height: auto;
+}
+
+
+
+
 
 /*Title*/
 .services_page .about_title {
