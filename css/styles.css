@@ -178,7 +178,7 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  background-color: #438496;
+  background: linear-gradient(#80c1ff, #99ceff);
   z-index: -1;
 }
 
@@ -191,20 +191,48 @@ body {
   top: -5%;
   left: -1%;
   transform: rotate(2deg);
-  border: 5vw solid #438496;
+  border: 5vw solid #80c1ff;
 }
 
 
 
 /*Images*/
-.services_page .images {
-  position: absolute;
+.services_page .lawn-care {
+  position: relative;
   left: 50%;
 }
 
-.services_page .images .image1 {
+.services_page .lawn-care img {
   width: 2vw;
   height: auto;
+}
+
+/*Hedging*/
+.services_page .hedging {
+  height: auto;
+  width: 50%;
+  position: relative;
+  top: 20%;
+  left: 3%;
+  padding: 1vw;
+  padding-left: 0;
+  border-left: 0.3vw solid black;
+}
+
+.services_page .hedging img {
+  width: 10vw;
+  height: auto;
+  display: inline-block;
+}
+
+.services_page .hedging h1 {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  vertical-align: top;
+  font-family: 'Indie Flower', bgBold, Helvetica;
+  font-size: 1.3vw;
+  color: black;
 }
 
 
@@ -264,5 +292,5 @@ body {
   top: -5%;
   left: -1%;
   transform: rotate(-2deg);
-    border: 2.5vw solid #438496;
+  border: 2.5vw solid #99ceff;
 }
