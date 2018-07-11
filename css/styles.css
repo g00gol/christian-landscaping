@@ -197,16 +197,6 @@ body {
 
 
 /*Images*/
-.services_page .lawn-care {
-  position: relative;
-  left: 50%;
-}
-
-.services_page .lawn-care img {
-  width: 2vw;
-  height: auto;
-}
-
 /*Hedging*/
 .services_page .hedging {
   height: auto;
@@ -214,15 +204,15 @@ body {
   position: relative;
   top: 20%;
   left: 3%;
-  padding: 1vw;
-  padding-left: 0;
-  border-left: 0.3vw solid black;
 }
 
 .services_page .hedging img {
   width: 10vw;
   height: auto;
   display: inline-block;
+  padding: 1vw;
+  padding-left: 0;
+  border-left: 0.3vw solid black;
 }
 
 .services_page .hedging h1 {
@@ -233,7 +223,68 @@ body {
   font-family: 'Indie Flower', bgBold, Helvetica;
   font-size: 1.3vw;
   color: black;
+  padding: 1vw;
 }
+
+/*Lawn Care*/
+.services_page .lawn-care {
+  height: auto;
+  width: 50%;
+  position: relative;
+  top: 20%;
+  left: 20%;
+}
+
+.services_page .lawn-care img {
+  width: 10vw;
+  height: auto;
+  display: inline-block;
+  padding: 1vw;
+  padding-right: 0;
+  border-right: 0.3vw solid black;
+}
+
+.services_page .lawn-care h1 {
+  position: relative;
+  display: inline-block;
+  float: left;
+  margin: 0;
+  vertical-align: top;
+  font-family: 'Indie Flower', bgBold, Helvetica;
+  font-size: 1.3vw;
+  color: black;
+  padding: 1vw;
+}
+
+/*Mulching*/
+.services_page .mulching {
+  height: auto;
+  width: 50%;
+  position: relative;
+  top: 20%;
+  left: 3%;
+}
+
+.services_page .mulching img {
+  width: 10vw;
+  height: auto;
+  display: inline-block;
+  padding: 1vw;
+  padding-left: 0;
+  border-left: 0.3vw solid black;
+}
+
+.services_page .mulching h1 {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  vertical-align: top;
+  font-family: 'Indie Flower', bgBold, Helvetica;
+  font-size: 1.3vw;
+  color: black;
+  padding: 1vw;
+}
+
 
 
 
